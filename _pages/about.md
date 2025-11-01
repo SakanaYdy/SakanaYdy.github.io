@@ -1,3 +1,13 @@
+@@ -1,56 +1,30 @@
+---
+permalink: /
+title: "About me"
+author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
+---
+
 你好！我是 [杨大宇]，一名热爱技术与创新的开发者。目前专注于 [软件工程，多模态模型，大模型应用] 方向的研究与应用。
 
 🎓 教育背景：
