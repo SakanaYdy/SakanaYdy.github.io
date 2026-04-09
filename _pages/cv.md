@@ -9,56 +9,99 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+## 教育背景
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+### 南京师范大学 · 计算机科学与技术
+**本科** · 2022.09 - 2026.06（预计）  
+GPA：3.8（专业前10%）  
+主修课程：数据结构与算法、操作系统、计算机组成原理、算法设计与分析、人工智能导论、概率论与数理统计、高级程序设计基础（C++）、深度学习、计算机系统基础、编译原理、移动平台开发等
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+### 南京大学 · 软件工程 / iSE实验室
+**硕士（拟）** · 2026.09 - 2029.06（预计）  
+研究方向：软件工程
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+## 工作经历
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+### Logic Solution · Java后端开发实习生
+**2025.03 - 2025.08**  
+参与远景能源EHS平台碳足迹产品研发，负责以下模块：
+
+- **审批流引擎**：设计并实现单人审批、多人会签、逐级审批等多种审批模式，支持任务转派、延期处理等操作。
+- **数据同步与性能优化**：实现云端与湖中EDM数据的自动同步机制（首次全量 + 后续增量），提升数据更新效率与查询性能。
+- **异步文件导出中心**：开发统一的文件导出中心，采用异步处理避免前端页面阻塞，改善用户体验。
+- **动态SQL查询与优化**：运用动态参数拼接SQL增强筛选灵活性，并进行SQL优化（减少子查询、建立冗余字段、使用EXISTS替换IN语句等）。
+
+技术栈：Spring Boot, MyBatis, MySQL, Redis, Jenkins, flyway
+
+## 项目经历
+
+### LLM Agent驱动的智能自动化测试系统
+**2025.09 - 2026.03**  
+- 设计需求生成Agent，构建源码/APK双模解析流程，结合静态代码分析与LLM语义推理提取应用功能，生成结构化测试需求。
+- 开发测试执行Agent，基于ReAct + Plan-Solve构建任务规划与执行框架，将测试需求自动拆解为UI点击、输入、页面跳转等原子操作。
+- 构建多模态环境感知机制，结合UI截图、页面结构与执行日志作为Observation输入LLM决策，提高交互稳定性。
+- 引入Self‑Reflection + Memory机制，通过执行状态检测与历史上下文管理避免循环操作，并自动记录操作路径、截图与日志生成测试报告。
+
+### 省间现货电力预测平台算法设计
+**2024.06 - 2024.08**  
+- 基于电力市场机理分析，对往年申报电量、电力负荷及气象等数据进行特征分析。
+- 构建LSTM‑LGB预测模型，利用LSTM捕捉全局时序信息，LGB进行最终预测，实现电力负荷的精准预测。
+
+### 教学资源评价模型设计与实现
+**2024.07 - 2025.02**  
+- 基于图文模型的教学视频质量评价，根据MOS标准构建多模态数据集。
+- 使用Whisper提取音频文本，结合画面、音频、文本三模态数据，采用CLIP架构进行多模态特征融合，实现端到端的质量评估模型。
+
+### 个人开发项目
+- **在线OJ网站系统**（2024.06 - 2024.08）：基于Spring Cloud微服务 + MQ + Docker的编程题目评测系统，自主实现代码沙箱模块，支持恶意代码检测（黑白名单机制）。
+- **聚合搜索系统**（2024.07 - 2024.08）：基于Spring Boot + Elastic Stack的一站式信息聚合搜索平台，实现MySQL与Elasticsearch数据同步，提升搜索体验与开发效率。
+
+## 专业技能
+
+### 编程语言与框架
+- **Python**：熟练掌握PyTorch深度学习框架，熟悉NumPy、Pandas、Matplotlib等数据处理与可视化工具。
+- **Java**：具备多线程与并发编程经验，熟练使用Spring Boot、MyBatis、Spring Cloud微服务架构（RabbitMQ、Nacos），熟悉Redis缓存与MySQL数据库优化。
+- **前端基础**：了解HTML/CSS/JavaScript，具备移动平台开发基础。
+
+### 人工智能与大数据
+- **大语言模型**：深入理解Transformer架构与注意力机制，掌握Prompt Engineering、RAG等应用技术，具备LLM Agent系统设计能力（ReAct、Plan‑Solve）。
+- **多模态学习**：熟悉CLIP、VideoMAE等主流多模态模型，能够解决图文检索、视频内容理解等跨模态任务。
+- **数据分析与预测**：熟练使用LSTM、LightGBM等模型进行时序预测与数据分析。
+
+### 开发与运维
+- **版本控制**：熟练使用Git进行代码版本控制，熟悉GitHub/GitLab协作开发流程。
+- **数据库**：熟悉MySQL、Redis，具备SQL优化与数据库设计经验。
+- **工具链**：熟悉Jenkins、Docker、flyway等开发与部署工具。
+
+## 获奖经历
+
+- 第十五届蓝桥杯软件类 A组 全国三等奖，江苏省一等奖
+- 2025年计算机设计大赛 · 大数据赛道 国家级二等奖
+- FPGA嵌入式设计竞赛 国家级三等奖
+- 2024年“华为杯”铜牌，2023年JSCPC铜牌
+- 人工智能算法精英赛 江苏省三等奖
+- 网络技术挑战赛 华东赛区 二等奖
+- 主持国家级大创一项，参与校级大创一项
+- 南京师范大学校三好学生，校优秀学生干部，三次获得校级一等奖学金
+- 中级软件设计师
+
+## 出版物
+
+（暂无出版物，可在此处添加未来的发表论文）
+
+## 讲座与演讲
+
+（暂无公开演讲，可在此处添加未来的分享）
+
+## 教学经历
+
+（暂无教学经历，可在此处添加未来的助教或课程指导）
+
+## 服务与领导力
+
+- 担任班级学生干部，组织多次班级活动与技术分享。
+
+---
+
+**最后更新**：2026年4月  
+**PDF简历下载**：[杨大宇大模型简历V1.pdf](/files/杨大宇大模型简历V1.pdf) | [杨大宇后端开发简历V2.pdf](/files/杨大宇后端开发简历V2.pdf)
